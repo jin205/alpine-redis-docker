@@ -21,9 +21,9 @@ VOLUME /data
 
 WORKDIR /data
 
-COPY docker-entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /docker-entrypoint
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint"]
 
 EXPOSE 6379
 
